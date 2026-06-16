@@ -10,7 +10,7 @@ Documentation about how to use standalone Pythia8 through CMSSW to test pythia (
 ## Steps to Follow:
 1. git clone this repo.
 
-2.
+2. Run test:
   ```bash
   cmsenv #activate cmsenv
   scram tool info pythia8 # Check that variable $PYTHA8_BASE is there. If not:
