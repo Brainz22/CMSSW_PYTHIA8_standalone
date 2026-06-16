@@ -16,7 +16,7 @@ Documentation about how to use standalone Pythia8 through CMSSW to test pythia (
   scram tool info pythia8 # Check that variable $PYTHA8_BASE is there. If not:
   export PYTHIA8_BASE=/cvmfs/cms.cern.ch/el8_amd64_gcc13/external/pythia8/317-28f2335c1fd0cf5ad4dd66647fac0416
   cd CMSSW_PYTHIA8_standalone/ 
-  g++ testCard.cc -o testCard \
+  g++ src/testCard.cc -o testCard \
       -I$PYTHIA8_BASE/include \
       -L$PYTHIA8_BASE/lib \
       -lpythia8 \
@@ -24,4 +24,4 @@ Documentation about how to use standalone Pythia8 through CMSSW to test pythia (
       && echo "Compiled OK"
   ```
 3. If no errors, an executable `testCard` file should have been generated. Test run:
-`./testCard testCard.dat > out.log` generates output to `out.log`. Check that there are no errors. 
+`./testCard <your_testCard>.dat > out.log` generates output to `out.log`. Check that there are no errors. 
