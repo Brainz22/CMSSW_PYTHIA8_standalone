@@ -26,6 +26,7 @@ HiggsBSM:allH2 = on
 25:m0        = 30  !M(Phi/a) 15,30,60 GeV
 25:mMin      = 20
 25:mWidth    = 0.00403
+25:tauCalc   = False ! Flag for whether the nominal proper lifetime, tau0, should be calculated from the particle width, mWidth.
 25:tau0      = 10   ! ctau/lifetime of phi 0 mm, 10 mm, 50 mm (PYTHIA takes values in mm not cm)
 25:0:bRatio  = 0.0
 25:1:bRatio  = 0.0
